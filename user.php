@@ -1,0 +1,64 @@
+<?php
+
+if ($_POST) {
+  $color = 'success';
+  switch ($_POST['id']) {
+    case '200108':
+      $message = " ID: 200108 <br> Name: Eman Ebied <br> Email: ema@gmail.com <br> Phone: 01111111111 <br> Address: Beni Suef  <br> Gender: Female";
+      break;
+    case '200109':
+      $message = "ID: 200109 <br> Name: Fatma Mohamed <br> Email: fatma@gmail.com <br> Phone: 01222222222 <br> Address: Cairo <br> Gender: Female";
+      break;
+    case '200110':
+      $message = 'ID: 200110 <br> Name: Mohamed Ali <br> Email: mohamed@gmail.com <br> Phone: 01333333333 <br> Address: Giza <br> Gender: male';
+      break;
+    default:
+      $color = 'danger';
+      $message = 'User Not Found';
+  }
+}
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>ProfilePeek</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container ">
+
+        <div class="row">
+            <div class="col-12 mt-5">
+                <h1 class="text-info text-center"> ProfilePeek</h1>
+            </div>
+            <div class="col-4 offset-4 mt-4">
+                <?php
+        if (isset($message)) {
+          echo "<div class='alert alert-$color'>$message</div>";
+        }
+        ?>
+            </div>
+        </div>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+        </script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

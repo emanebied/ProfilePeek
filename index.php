@@ -26,7 +26,7 @@
                         <input type="number" class="form-control" name=" id" placeholder="Enter ID">
                     </div>
                     <div class="form-group">
-                        <button class="btn btn-dark">Get Data</button>
+                        <button class="btn btn-secondary">Get Data</button>
                     </div>
                 </form>
             </div>
