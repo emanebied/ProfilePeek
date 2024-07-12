@@ -27,6 +27,14 @@ ProfilePeek is a simple web application that allows users to enter their ID and 
     ```
 3. Move the project files to your web server's root directory (e.g., /var/www/html for Apache).
 
+## Screenshots:
+
+### Home Page
+![index](https://github.com/user-attachments/assets/ea918a22-a1a3-4258-9357-ffc40a90a97e)
+
+### ProfilePeek 
+![userInfo](https://github.com/user-attachments/assets/555f096b-6b16-4ab3-85ba-05bda2d68307)
+
 ## Usage
 
 1. Open your web browser and navigate to the URL where the project is hosted (e.g., http://localhost/profilepeek).
